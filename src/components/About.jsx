@@ -8,7 +8,7 @@ const About = () => {
       <div className="mx-auto max-w-7xl">
 
         {/* Section Heading */}
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center" data-scroll-reveal>
           <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-cyan-400">
             Get To Know Me
           </p>
@@ -24,7 +24,7 @@ const About = () => {
         <div className="grid items-center gap-12 md:grid-cols-2">
 
           {/* Profile Card */}
-          <div className="flex justify-center">
+          <div className="flex justify-center" data-scroll-reveal data-reveal-delay="1">
             <div className="relative w-full max-w-md rounded-2xl border border-white/10 bg-gray-950 p-8 shadow-2xl shadow-cyan-500/5">
 
               <div className="absolute -right-3 -top-3 h-16 w-16 rounded-full bg-cyan-400/10 blur-xl"></div>
@@ -34,7 +34,7 @@ const About = () => {
                   SV
                 </div>
 
-                <div>
+                <div data-scroll-reveal data-reveal-delay="2">
                   <h3 className="text-xl font-bold">SY VISAL</h3>
                   <p className="mt-1 text-sm text-gray-400">
                     Web Developer

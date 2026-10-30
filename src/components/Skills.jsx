@@ -39,7 +39,7 @@ const Skills = () => {
       <div className="mx-auto max-w-7xl">
 
         {/* Heading */}
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center" data-scroll-reveal>
           <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-cyan-400">
             What I Can Do
           </p>
@@ -58,10 +58,12 @@ const Skills = () => {
 
         {/* Skill Categories */}
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {skillCategories.map((category) => (
+          {skillCategories.map((category, index) => (
             <div
               key={category.title}
               className="group rounded-2xl border border-white/10 bg-gray-900 p-7 transition duration-300 hover:-translate-y-2 hover:border-cyan-400/50 hover:shadow-xl hover:shadow-cyan-500/5"
+              data-scroll-reveal
+              data-reveal-delay={index + 1}
             >
 
               <h3 className="text-xl font-bold transition group-hover:text-cyan-400">

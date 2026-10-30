@@ -31,7 +31,7 @@ const Project = () => {
       <div className="mx-auto max-w-7xl">
 
         {/* Section Heading */}
-        <div className="mb-16 text-center">
+        <div className="mb-16 text-center" data-scroll-reveal>
           <p className="mb-3 font-semibold uppercase tracking-[0.3em] text-cyan-400">
             My Recent Work
           </p>
@@ -56,6 +56,8 @@ const Project = () => {
             <article
               key={project.number}
               className="group overflow-hidden rounded-2xl border border-white/10 bg-gray-950 transition duration-300 hover:-translate-y-2 hover:border-cyan-400/50 hover:shadow-2xl hover:shadow-cyan-500/10"
+              data-scroll-reveal
+              data-reveal-delay={Number(project.number)}
             >
               {/* Project Image */}
               <div className="relative h-64 overflow-hidden bg-gray-800">

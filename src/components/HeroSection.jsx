@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 md:grid-cols-2">
 
         {/* Left Content */}
-        <div className="text-center md:text-left">
+        <div className="text-center md:text-left" data-scroll-reveal>
           <p className="mb-4 text-lg font-medium text-cyan-400">
             Hello, I'm
           </p>
@@ -51,7 +51,7 @@ const HeroSection = () => {
         </div>
 
         {/* Right Profile Image */}
-        <div className="flex justify-center">
+        <div className="flex justify-center" data-scroll-reveal data-reveal-delay="1">
           <div className="relative">
             {/* Glow Effect */}
             <div className="absolute -inset-3 rounded-full bg-cyan-400/20 blur-2xl"></div>

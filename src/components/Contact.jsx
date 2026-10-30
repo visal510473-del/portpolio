@@ -43,7 +43,7 @@ export default function Contact() {
       <div className="relative max-w-6xl mx-auto">
 
         {/* Section Heading */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-14" data-scroll-reveal>
           <p className="text-cyan-400 text-sm font-bold
             tracking-[0.3em] uppercase mb-4">
             Get In Touch
@@ -66,7 +66,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 sm:grid-cols-2
           lg:grid-cols-3 gap-6">
 
-          {contacts.map((contact) => (
+          {contacts.map((contact, index) => (
             <a
               key={contact.name}
               href={contact.link}
@@ -81,6 +81,8 @@ export default function Contact() {
                 p-8 transition-all duration-300
                 hover:-translate-y-2 hover:border-cyan-400
                 hover:shadow-lg hover:shadow-cyan-500/10"
+              data-scroll-reveal
+              data-reveal-delay={index + 1}
             >
               {/* Icon */}
               <div className={`flex items-center justify-center
@@ -117,7 +119,7 @@ export default function Contact() {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center" data-scroll-reveal>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
             Let's Work <span className="text-cyan-400">Together</span>
           </h3>
